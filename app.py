@@ -15,8 +15,8 @@ from sklearn.ensemble import RandomForestClassifier
 
 
 
-scaler = load(open('models/standard_scaler.pkl', 'rb'))
-lr = load(open('E:/LiveProject/Abdul_jawed/heart_disease_forest_new.pickle', 'rb'))
+scaler = load(open('standard_scaler.pkl', 'rb'))
+lr = load(open('heart_disease_forest_new.pickle', 'rb'))
 
 
 
