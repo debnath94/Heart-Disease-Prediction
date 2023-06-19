@@ -16,7 +16,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 
 scaler = load(open('standard_scaler.pkl', 'rb'))
-lr = load(open('heart_disease_forest_new.pickle', 'rb'))
+#lr = load(open('heart_disease_forest_new.pickle', 'rb'))
 
 
 
@@ -112,7 +112,7 @@ elif Age_Group == "Youngster":
 if st.button('Predict'):
     query_point = np.array([Age, Sex, Chest_Pain_Level, Resting_Blood_Pressure, Cholestrol, Fasting_Blood_Sugar, Resting_ECG, Max_Heart_Rate, Exercise_Induced_Angina, Depression, SlopeC, Major_Vessels, Thalassemia_Level, Age_Group])
     query_point = query_point.reshape(1, -1)
-    query_point_transformed = scaler.transform(query_point)
+    #query_point_transformed = scaler.transform(query_point)
     prediction = lr.predict(query_point)
 
 
